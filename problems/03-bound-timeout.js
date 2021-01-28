@@ -26,7 +26,9 @@ boundTimeout(meow, 500, dog); // prints 'Fido meowsss' after 500 ms
 boundTimeout(meow, 500, cat); // prints 'Sennacy meowsss' after 500 ms
 ***********************************************************************/
 
-
+let boundTimeout = (cb, delay, obj) => {
+  return setTimeout(cb.bind(obj), delay);
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
