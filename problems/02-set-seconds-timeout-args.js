@@ -22,6 +22,11 @@ setSecondsTimeoutArgs(function(arg1, arg2) {
 }, 0.7, 'hello', 'world'); // should print 'hello-world' after 700ms
 ***********************************************************************/
 
+const setSecondsTimeoutArgs = (cb, seconds, ...args) => {
+  
+return  setTimeout(cb, (seconds * 1000), ...args)
+
+}
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
