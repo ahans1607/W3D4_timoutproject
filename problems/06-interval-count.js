@@ -28,7 +28,7 @@ intervalCount(function() {
 
 // }
 
-const intervalCount =(cb, delay, numTimes) => {
+const intervalCount = (cb, delay, numTimes) => {
 
   let interval = setInterval(function() {
     cb()
@@ -37,12 +37,11 @@ const intervalCount =(cb, delay, numTimes) => {
       clearInterval(interval)
     }
   }, delay)
-
+  console.log(interval);
 }
-
-intervalCount(function() {
-  console.log('hi');
-}, 500, 4); // prints 'hi' at 500ms intervals a total of 3 times
+// intervalCount(function() {
+//   console.log('hi');
+// }, 500, 4); // prints 'hi' at 500ms intervals a total of 3 times
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
