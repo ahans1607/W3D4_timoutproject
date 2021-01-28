@@ -23,7 +23,7 @@ setSecondsTimeout(function () {
 }, 1.4); // should print 'world' after 1400 milliseconds
 ***********************************************************************/
 
-const setSecondsTimeout = (cb, seconds) => setTimeout(cb, (seconds * 1000))
+
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
