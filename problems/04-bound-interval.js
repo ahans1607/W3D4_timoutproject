@@ -23,7 +23,21 @@ const timeoutObj = boundInterval(bark, 250, cat); // prints 'Sennacy barks' ever
 console.log(timeoutObj); // Timeout { ... }
 ***********************************************************************/
 
+// let boundInterval = (cb, delay, obj) => {
+//   return setInterval(cb.bind(obj), delay);
+// }
 
+// function bark() {
+//   console.log(this.name + ' barks');
+// }
+
+// const dog = { name: 'Fido', colour: 'brown' };
+// const cat = { name: 'Sennacy', colour: 'black' };
+
+// boundInterval(bark, 500, dog); // prints 'Fido barks' every 500 ms
+
+// const timeoutObj = boundInterval(bark, 250, cat); // prints 'Sennacy barks' every 250 ms
+// console.log(timeoutObj); // Timeout { ... }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
