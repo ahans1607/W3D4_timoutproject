@@ -22,7 +22,11 @@ setSecondsTimeout(function () {
     console.log('world');
 }, 1.4); // should print 'world' after 1400 milliseconds
 ***********************************************************************/
-
+const setSecondsTimeout = (cb, seconds) => {
+  
+  return  setTimeout(cb, (seconds * 1000))
+  
+  }
 
 
 
